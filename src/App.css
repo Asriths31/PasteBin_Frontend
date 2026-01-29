@@ -1,0 +1,64 @@
+.main-div{
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  padding: 10px;
+
+}
+
+.main-div h1{
+  
+}
+
+.text-div{
+  display: flex;
+  justify-content: space-between;
+  height: 80vh;
+  width: 95vw;
+  /* overflow: hidden; */
+}
+
+.text-area{
+  width: 70%;
+  height: 100%;
+  resize:none;
+  padding: 10px;
+  font-size: large;
+  line-height: 1.5;
+}
+
+.sidebar{
+  height: 100%;
+  width: 30%;
+  border: 1px solid grey;
+  border-radius: 2px;
+  padding: 10px;
+  background-color: rgb(73, 71, 71);
+}
+
+.input-values{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  gap: 3px;
+}
+
+.input-values input{
+  padding: 10px 5px;
+}
+
+.generated-url button{
+  margin-right: 10px;
+}
+
+.generated-url p{
+  font-weight: bold;
+  font-family: monospace;
+
+}
+
+.error-msg{
+  color: tomato;
+  font-weight: 700;
+  font-size: medium;
+}
