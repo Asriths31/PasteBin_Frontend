@@ -18,6 +18,11 @@ function App() {
     setErr(null)
     setData(null)
     setIsTextCopied(false)
+    if(content.trim().length===0){
+      setErr("Paste Cannot be empty , Please Enter any text ");
+      setIsLoading(false)
+      return;
+    }
     axiosInstance.post("/api/pastes",{
       content,
       max_views:Number(maxViews),
@@ -52,6 +57,7 @@ function App() {
         <textarea 
         className='text-area'
         value={content}
+        placeholder='Please Enter Your Text Here'
         onChange={e=>{
           setErr(null)
           setData(null)
@@ -61,9 +67,10 @@ function App() {
         <div className='sidebar'>
             <div className='input-values'>
                 <label>
-                  Expiry of paste(in seconds)
+                  Expiry of paste (in seconds)
                 </label>
                 <input
+                placeholder='Ex:3600'
                 value={ttlSeconds??""}
                 type='number'
                 onChange={(e)=>setTtlSeconds(e.target.value)}
@@ -74,6 +81,7 @@ function App() {
                   Max view Limit
                 </label>
                 <input
+                placeholder='Ex:3'
                 value={maxViews??""}
                 type='number'
                 onChange={(e)=>setMaxViews(e.target.value)}
