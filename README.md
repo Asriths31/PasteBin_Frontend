@@ -49,7 +49,7 @@ The project focuses on simplicity, fast performance.
 
 ---
 
-### Frontend Repository Link
+### Backend Repository Link
 
 
 [https://github.com/Asriths31/PasteBin_Backend](https://github.com/Asriths31/PasteBin_Backend)
