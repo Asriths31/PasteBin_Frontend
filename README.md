@@ -21,6 +21,42 @@ If you are developing a production application, we recommend using TypeScript wi
 Pastebin Lite is a lightweight web application that allows users to create and share text pastes easily.  
 The project focuses on simplicity, fast performance.
 
+
+---
+
+## Tech Stack
+
+- Frontend: React.js
+- Backend: Node.js, Express
+- Database: MongoDB Atlas
+- Deployment: Render(backend),netlify(frontend)
+
+---
+
+
+---
+
+### Deployed Backend URL
+
+[https://pastebin-backend-8cl7.onrender.com/](https://pastebin-backend-8cl7.onrender.com/)
+
+---
+
+### Deployed Frontend URL
+
+[https://verdant-phoenix-c09c73.netlify.app/](https://verdant-phoenix-c09c73.netlify.app/)
+
+
+---
+
+### Frontend Repository Link
+
+
+[https://github.com/Asriths31/PasteBin_Backend](https://github.com/Asriths31/PasteBin_Backend)
+
+
+---
+
 ## How to Run the App Locally
 
 ### Prerequisites
